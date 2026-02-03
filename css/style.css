@@ -1,1 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: #0a1f44;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 45px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  background: url("../images/hero.jpg") center/cover no-repeat;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  max-width: 600px;
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 18px;
+  max-width: 550px;
+}
+
+/* SECTIONS */
+section {
+  padding: 70px 60px;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #0a1f44;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* TEAM */
+.team img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* FORM */
+form {
+  max-width: 450px;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+}
+
+button {
+  background: #0a1f44;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* AUTH */
+.auth-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+}
 
