@@ -1,116 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A.D.I.S Ltd | Digital Solutions</title>
-<link rel="stylesheet" href="style.css">
+<title>A.D.I.S Ltd | Innovative Digital Solutions</title>
+<link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script defer src="js/main.js"></script>
 </head>
 
 <body>
 
-<!-- Top Bar -->
-<div class="top-bar">
-  <div class="container">
-    <span>Email: info@adisltd.com</span>
-    <span>Phone: +250 7XX XXX XXX</span>
-  </div>
-</div>
+<header class="navbar">
+    <div class="logo">
+        <img src="images/logo.png" alt="A.D.I.S Logo">
+    </div>
 
-<!-- Navigation -->
-<header>
-  <div class="container nav-container">
-    <img src="A.D.I.S Logo.svg" class="logo">
     <nav>
-      <a href="#">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#works">Works</a>
-      <a href="#contact">Contact</a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
-  </div>
+
+    <div class="nav-actions">
+        <button id="themeToggle">🌙</button>
+        <a href="login.html" class="btn-outline">Login</a>
+    </div>
 </header>
 
-<!-- Hero Section -->
+<!-- HERO SECTION -->
 <section class="hero">
-  <div class="container hero-content">
-    <h1>Digital Excellence <span>Delivered.</span></h1>
-    <p>We build powerful digital solutions that help businesses grow and innovate.</p>
-    <a href="#services" class="btn">Explore Services</a>
-  </div>
+    <div class="hero-content">
+        <h1 class="fade-in">Empowering Businesses Through Digital Innovation</h1>
+        <p class="fade-in delay-1">We build modern digital solutions that help businesses grow faster and smarter.</p>
+        <a href="services.html" class="btn-primary fade-in delay-2">Explore Services</a>
+    </div>
 </section>
 
-<!-- About Section -->
-<section id="about" class="about">
-  <div class="container">
-    <h2>What Does A.D.I.S Ltd Do?</h2>
-    <p>
-      A.D.I.S Ltd is a digital solutions company offering software development,
-      web development, mobile app development, graphic design and IT consultancy services.
-      We help businesses transform ideas into scalable digital products.
-    </p>
-  </div>
-</section>
+<!-- SERVICES PREVIEW -->
+<section class="services-preview">
+    <h2 class="section-title">Our Core Services</h2>
+    <div class="service-grid">
 
-<!-- Stats Section -->
-<section class="stats">
-  <div class="container stats-grid">
-    <div>
-      <h3>100+</h3>
-      <p>Clients</p>
-    </div>
-    <div>
-      <h3>250+</h3>
-      <p>Projects</p>
-    </div>
-    <div>
-      <h3>1,500+</h3>
-      <p>Hours of Support</p>
-    </div>
-    <div>
-      <h3>10+</h3>
-      <p>Team Experts</p>
-    </div>
-  </div>
-</section>
+        <div class="card reveal">
+            <h3>Web Development</h3>
+            <p>Modern, responsive and scalable websites tailored to your brand.</p>
+        </div>
 
-<!-- Services -->
-<section id="services" class="services">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="services-grid">
-      <div class="card">
-        <h3>Web Development</h3>
-        <p>Modern, responsive and scalable websites.</p>
-      </div>
-      <div class="card">
-        <h3>Mobile Apps</h3>
-        <p>Android & iOS app development.</p>
-      </div>
-      <div class="card">
-        <h3>Software Solutions</h3>
-        <p>Custom enterprise systems tailored to your needs.</p>
-      </div>
-      <div class="card">
-        <h3>Branding & Design</h3>
-        <p>Creative brand identity and graphic design services.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        <div class="card reveal">
+            <h3>Mobile Apps</h3>
+            <p>Custom Android & iOS apps designed for performance and growth.</p>
+        </div>
 
-<!-- Contact -->
-<section id="contact" class="contact">
-  <div class="container">
-    <h2>Contact Us</h2>
-    <p>Email: info@adisltd.com</p>
-    <p>Phone: +250 7XX XXX XXX</p>
-  </div>
+        <div class="card reveal">
+            <h3>Digital Marketing</h3>
+            <p>Strategic campaigns to boost visibility and conversions.</p>
+        </div>
+
+    </div>
 </section>
 
 <footer>
-  <p>© 2026 A.D.I.S Ltd. All Rights Reserved.</p>
+    <p>© 2026 A.D.I.S Ltd. All rights reserved.</p>
 </footer>
 
 </body>
