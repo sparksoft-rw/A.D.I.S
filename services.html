@@ -1,40 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="light">
 <head>
-  <title>Services | A.D.I.S</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | A.D.I.S Ltd</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script defer src="js/main.js"></script>
 </head>
+
 <body>
 
-<header>
-  <img src="images/logo.png">
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<header class="navbar">
+    <div class="logo">
+        <img src="images/logo.png" alt="A.D.I.S Logo">
+    </div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="nav-actions">
+        <button id="themeToggle">🌙</button>
+        <a href="login.html" class="btn-outline">Login</a>
+    </div>
 </header>
 
-<section>
-  <h2 class="section-title">Our Services</h2>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Big Data Solutions</h3>
-      <p>Scalable data pipelines and dashboards.</p>
+<section class="hero" style="height:60vh;">
+    <div class="hero-content">
+        <h1>Our Services</h1>
+        <p>Comprehensive digital solutions for modern businesses.</p>
     </div>
-    <div class="card">
-      <h3>Artificial Intelligence</h3>
-      <p>Predictive analytics, NLP, and computer vision.</p>
-    </div>
-    <div class="card">
-      <h3>Consulting</h3>
-      <p>Strategy, digital transformation, and data governance.</p>
-    </div>
-  </div>
 </section>
+
+<section class="services-preview">
+    <div class="service-grid">
+
+        <div class="card reveal">
+            <h3>Web Development</h3>
+            <p>Custom websites built with modern technologies.</p>
+        </div>
+
+        <div class="card reveal">
+            <h3>Mobile Applications</h3>
+            <p>High-performance Android & iOS apps.</p>
+        </div>
+
+        <div class="card reveal">
+            <h3>Software Systems</h3>
+            <p>Enterprise-grade management systems.</p>
+        </div>
+
+        <div class="card reveal">
+            <h3>UI/UX Design</h3>
+            <p>User-centered designs that convert visitors into customers.</p>
+        </div>
+
+        <div class="card reveal">
+            <h3>Digital Marketing</h3>
+            <p>SEO, branding and strategic growth campaigns.</p>
+        </div>
+
+        <div class="card reveal">
+            <h3>IT Consulting</h3>
+            <p>Technology strategies that align with business goals.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 A.D.I.S Ltd. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
-
