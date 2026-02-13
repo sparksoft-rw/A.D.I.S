@@ -1,39 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>About - A.D.I.S Ltd</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | A.D.I.S Ltd</title>
 <link rel="stylesheet" href="css/style.css">
+<script defer src="js/main.js"></script>
 </head>
 <body>
 
-<header>
-  <div class="logo">A.D.I.S Ltd</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<header class="navbar">
+    <div class="container nav-container">
+        <img src="images/A.D.I.S Logo.svg" class="logo">
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html" class="btn-nav">Login</a>
+        </nav>
+        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+    </div>
 </header>
 
-<section class="hero">
-  <div class="hero-content fade-in">
-    <h1>About A.D.I.S Ltd</h1>
-    <p>We are a forward-thinking digital agency dedicated to delivering modern, scalable, and high-impact technology solutions.</p>
-  </div>
+<section class="page-hero">
+    <div class="container fade-in">
+        <h1>About A.D.I.S Ltd</h1>
+        <p>
+            We are a forward-thinking digital solutions company dedicated to helping
+            organizations modernize operations, enhance productivity, and scale with confidence.
+        </p>
+    </div>
 </section>
 
-<section>
-  <h2 class="section-title fade-in">Our Mission</h2>
-  <p class="section-text fade-in">
-    Our mission is to empower businesses through innovative digital systems that drive growth,
-    streamline operations, and enhance customer engagement across all industries.
-  </p>
+<section class="content-section">
+    <div class="container grid-2">
+        <div class="fade-in">
+            <h2>Who We Are</h2>
+            <p>
+                A.D.I.S Ltd specializes in delivering high-performance digital systems,
+                web platforms, enterprise automation tools, and secure IT infrastructure.
+                Our mission is to bridge innovation and strategy so businesses grow faster
+                and smarter in an evolving digital landscape.
+            </p>
+            <p>
+                With a strong focus on quality engineering and user-centered design,
+                we build solutions that are scalable, secure, and future-ready.
+            </p>
+        </div>
+
+        <div class="glass-card fade-in">
+            <h3>Our Core Values</h3>
+            <ul>
+                <li>✔ Innovation & Continuous Improvement</li>
+                <li>✔ Integrity & Transparency</li>
+                <li>✔ Performance & Scalability</li>
+                <li>✔ Long-Term Partnerships</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
-<footer>
-  © 2026 A.D.I.S Ltd. All rights reserved.
+<footer class="premium-footer">
+    <div class="container footer-grid">
+        <div>
+            <img src="images/A.D.I.S Logo.svg" class="footer-logo">
+            <p>Advanced Digital & IT Solutions built for tomorrow.</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>Email: info@adis.rw</p>
+            <p>Phone: +250 XXX XXX XXX</p>
+        </div>
+    </div>
 </footer>
 
-<script src="js/main.js"></script>
 </body>
 </html>
