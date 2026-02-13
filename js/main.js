@@ -1,41 +1,17 @@
-// Dark Mode
-const toggle = document.getElementById("themeToggle");
+const faders = document.querySelectorAll('.fade-in');
 
-if(toggle){
-    toggle.addEventListener("click", () => {
-        const html = document.documentElement;
-        if(html.getAttribute("data-theme") === "dark"){
-            html.setAttribute("data-theme","light");
-            toggle.textContent="🌙";
-        } else {
-            html.setAttribute("data-theme","dark");
-            toggle.textContent="☀️";
-        }
-    });
-}
+const appearOptions = {
+  threshold: 0.2
+};
 
-// Scroll Reveal
-window.addEventListener("scroll", () => {
-    document.querySelectorAll(".reveal").forEach(el => {
-        if(el.getBoundingClientRect().top < window.innerHeight - 100){
-            el.classList.add("active");
-        }
-    });
-});
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('show');
+    observer.unobserve(entry.target);
+  });
+}, appearOptions);
 
-// Counters
-document.querySelectorAll('.counter').forEach(counter => {
-    const update = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const increment = target / 200;
-
-        if(count < target){
-            counter.innerText = Math.ceil(count + increment);
-            setTimeout(update,10);
-        } else {
-            counter.innerText = target;
-        }
-    };
-    update();
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
 });
