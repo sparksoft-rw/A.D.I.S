@@ -1,40 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact - A.D.I.S Ltd</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | A.D.I.S Ltd</title>
 <link rel="stylesheet" href="css/style.css">
+<script defer src="js/main.js"></script>
 </head>
 <body>
 
-<header>
-  <div class="logo">A.D.I.S Ltd</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-  </nav>
+<header class="navbar">
+    <div class="container nav-container">
+        <img src="images/A.D.I.S Logo.svg" class="logo">
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="login.html" class="btn-nav">Login</a>
+        </nav>
+        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+    </div>
 </header>
 
-<section class="hero">
-  <div class="hero-content fade-in">
-    <h1>Contact Us</h1>
-    <p>Let’s build something exceptional together.</p>
-  </div>
+<section class="page-hero">
+    <div class="container fade-in">
+        <h1>Contact Us</h1>
+        <p>
+            Let’s discuss how A.D.I.S Ltd can help transform your digital operations.
+        </p>
+    </div>
 </section>
 
-<section>
-  <h2 class="section-title fade-in">Get In Touch</h2>
-  <p class="section-text fade-in">
-    Reach out to us for partnerships, consultations, or project discussions.
-    Our team responds promptly to all inquiries.
-  </p>
+<section class="content-section">
+    <div class="container grid-2">
+
+        <div class="fade-in">
+            <h2>Get In Touch</h2>
+            <p>
+                Reach out to our team for consultations, partnerships,
+                or custom project inquiries.
+            </p>
+            <p>Email: info@adis.rw</p>
+            <p>Phone: +250 XXX XXX XXX</p>
+        </div>
+
+        <form class="glass-card fade-in contact-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+
+    </div>
 </section>
 
-<footer>
-  © 2026 A.D.I.S Ltd. All rights reserved.
+<footer class="premium-footer">
+    <div class="container footer-grid">
+        <div>
+            <img src="images/A.D.I.S Logo.svg" class="footer-logo">
+            <p>Advanced Digital & IT Solutions built for tomorrow.</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>Email: info@adis.rw</p>
+            <p>Phone: +250 XXX XXX XXX</p>
+        </div>
+    </div>
 </footer>
 
-<script src="js/main.js"></script>
 </body>
 </html>
-
