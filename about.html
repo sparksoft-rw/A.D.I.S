@@ -1,71 +1,99 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us | A.D.I.S Ltd</title>
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<script defer src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <title>About Us | A.D.I.S Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
 </head>
-
 <body>
 
 <header class="navbar">
-    <div class="logo">
-        <img src="images/A.D.I.S Logo.svg" alt="A.D.I.S Logo">
-    </div>
-
+  <div class="container nav-container">
+    <div class="logo">A.D.I.S</div>
     <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="#">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
-
-    <div class="nav-actions">
-        <button id="themeToggle">🌙</button>
-        <a href="login.html" class="btn-outline">Login</a>
-    </div>
+  </div>
 </header>
 
-<section class="hero" style="height:60vh;">
-    <div class="hero-content">
-        <h1>About A.D.I.S Ltd</h1>
-        <p>Innovative digital solutions built for growth and sustainability.</p>
-    </div>
+<section class="page-hero">
+  <div class="hero-bg-animation"></div>
+  <div class="container">
+    <h1>About A.D.I.S Ltd</h1>
+    <p>Driving digital transformation with innovation, expertise, and measurable results.</p>
+  </div>
 </section>
 
-<section class="services-preview">
-    <h2 class="section-title">Who We Are</h2>
-    <p style="max-width:800px;margin:30px auto;">
-        A.D.I.S Ltd is a forward-thinking digital solutions company delivering
-        web development, mobile applications, and enterprise systems.
-        Our mission is to empower businesses with modern, scalable technology.
+<section class="section">
+  <div class="container">
+    <h2>Who We Are</h2>
+    <p>
+      A.D.I.S Ltd is a forward-thinking digital solutions company committed to 
+      helping organizations leverage technology for sustainable growth. 
+      We specialize in designing, developing, and deploying high-performance 
+      digital systems that empower businesses to compete confidently in a 
+      rapidly evolving digital economy.
+    </p>
+    <p>
+      Our team consists of creative strategists, experienced developers, 
+      UI/UX designers, and digital transformation consultants who work together 
+      to craft scalable solutions tailored to each client’s unique goals.
+    </p>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="container">
+    <h2>Our Mission</h2>
+    <p>
+      To deliver innovative and reliable digital solutions that simplify processes, 
+      enhance customer engagement, and unlock long-term business value.
     </p>
 
-    <div class="service-grid">
-        <div class="card reveal">
-            <h3>Our Mission</h3>
-            <p>To transform ideas into powerful digital solutions.</p>
-        </div>
-
-        <div class="card reveal">
-            <h3>Our Vision</h3>
-            <p>To be a leading technology partner across Africa and beyond.</p>
-        </div>
-
-        <div class="card reveal">
-            <h3>Our Values</h3>
-            <p>Innovation, integrity, excellence, and client satisfaction.</p>
-        </div>
-    </div>
+    <h2>Our Vision</h2>
+    <p>
+      To become a trusted leader in digital innovation by continuously 
+      pushing technological boundaries and building meaningful partnerships.
+    </p>
+  </div>
 </section>
 
-<footer>
-    <p>© 2026 A.D.I.S Ltd. All rights reserved.</p>
+<section class="section">
+  <div class="container grid-3">
+    <div class="value-box">
+      <h3>Innovation</h3>
+      <p>We stay ahead of trends to provide cutting-edge, future-ready solutions.</p>
+    </div>
+    <div class="value-box">
+      <h3>Integrity</h3>
+      <p>Transparency and honesty guide every decision we make.</p>
+    </div>
+    <div class="value-box">
+      <h3>Excellence</h3>
+      <p>We pursue perfection in execution, design, and customer satisfaction.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Build Something Great?</h2>
+    <p>Let’s collaborate and turn your vision into a scalable digital solution.</p>
+    <a href="contact.html" class="btn-primary">Get in Touch</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 A.D.I.S Ltd. All Rights Reserved.</p>
+  </div>
 </footer>
 
 </body>
