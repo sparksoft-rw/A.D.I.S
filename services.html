@@ -1,50 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Services - A.D.I.S Ltd</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | A.D.I.S Ltd</title>
 <link rel="stylesheet" href="css/style.css">
+<script defer src="js/main.js"></script>
 </head>
 <body>
 
-<header>
-  <div class="logo">A.D.I.S Ltd</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<header class="navbar">
+    <div class="container nav-container">
+        <img src="images/A.D.I.S Logo.svg" class="logo">
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html" class="btn-nav">Login</a>
+        </nav>
+        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+    </div>
 </header>
 
-<section class="hero">
-  <div class="hero-content fade-in">
-    <h1>Our Services</h1>
-    <p>We provide premium digital solutions tailored to meet evolving business demands.</p>
-  </div>
+<section class="page-hero">
+    <div class="container fade-in">
+        <h1>Our Services</h1>
+        <p>
+            We deliver high-impact digital services designed to elevate your business operations
+            and create measurable growth.
+        </p>
+    </div>
 </section>
 
-<section>
-  <h2 class="section-title fade-in">What We Offer</h2>
-  <div class="cards">
-    <div class="card fade-in">
-      <h3>Web Development</h3>
-      <p>Modern, responsive and scalable web platforms built with performance in mind.</p>
+<section class="content-section">
+    <div class="container services-grid">
+
+        <div class="glass-card fade-in">
+            <h3>Web Development</h3>
+            <p>
+                Modern, responsive, and scalable web applications built with performance
+                and user experience in mind.
+            </p>
+        </div>
+
+        <div class="glass-card fade-in">
+            <h3>Enterprise Systems</h3>
+            <p>
+                Custom business platforms tailored to streamline workflows,
+                automate operations, and enhance decision-making.
+            </p>
+        </div>
+
+        <div class="glass-card fade-in">
+            <h3>IT Infrastructure</h3>
+            <p>
+                Secure networking, cloud deployment, and infrastructure solutions
+                built for reliability and growth.
+            </p>
+        </div>
+
+        <div class="glass-card fade-in">
+            <h3>Digital Strategy</h3>
+            <p>
+                Strategic consulting to help organizations adopt the right technologies,
+                reduce inefficiencies, and scale sustainably.
+            </p>
+        </div>
+
     </div>
-    <div class="card fade-in">
-      <h3>Mobile Applications</h3>
-      <p>High-performing Android and iOS applications tailored to your users.</p>
-    </div>
-    <div class="card fade-in">
-      <h3>Digital Strategy</h3>
-      <p>Strategic consulting to align technology with business growth goals.</p>
-    </div>
-  </div>
 </section>
 
-<footer>
-  © 2026 A.D.I.S Ltd. All rights reserved.
+<footer class="premium-footer">
+    <div class="container footer-grid">
+        <div>
+            <img src="images/A.D.I.S Logo.svg" class="footer-logo">
+            <p>Advanced Digital & IT Solutions built for tomorrow.</p>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>Email: info@adis.rw</p>
+            <p>Phone: +250 XXX XXX XXX</p>
+        </div>
+    </div>
 </footer>
 
-<script src="js/main.js"></script>
 </body>
 </html>
-
