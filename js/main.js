@@ -1,4 +1,4 @@
-// DARK MODE TOGGLE
+// Dark Mode
 const toggle = document.getElementById("themeToggle");
 
 if(toggle){
@@ -6,41 +6,36 @@ if(toggle){
         const html = document.documentElement;
         if(html.getAttribute("data-theme") === "dark"){
             html.setAttribute("data-theme","light");
-            toggle.textContent = "🌙";
+            toggle.textContent="🌙";
         } else {
             html.setAttribute("data-theme","dark");
-            toggle.textContent = "☀️";
+            toggle.textContent="☀️";
         }
     });
 }
 
-// SCROLL REVEAL
+// Scroll Reveal
 window.addEventListener("scroll", () => {
     document.querySelectorAll(".reveal").forEach(el => {
-        const position = el.getBoundingClientRect().top;
-        const screen = window.innerHeight;
-        if(position < screen - 100){
+        if(el.getBoundingClientRect().top < window.innerHeight - 100){
             el.classList.add("active");
         }
     });
 });
 
-// ANIMATED COUNTERS
-const counters = document.querySelectorAll('.counter');
-const speed = 200;
-
-counters.forEach(counter => {
-    const updateCount = () => {
+// Counters
+document.querySelectorAll('.counter').forEach(counter => {
+    const update = () => {
         const target = +counter.getAttribute('data-target');
         const count = +counter.innerText;
-        const increment = target / speed;
+        const increment = target / 200;
 
         if(count < target){
             counter.innerText = Math.ceil(count + increment);
-            setTimeout(updateCount, 10);
+            setTimeout(update,10);
         } else {
             counter.innerText = target;
         }
     };
-    updateCount();
+    update();
 });
