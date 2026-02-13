@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login | A.D.I.S Ltd</title>
 <link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <script defer src="js/main.js"></script>
 </head>
 
-<body>
+<body class="auth-body">
 
-<section class="services-preview" style="height:100vh;display:flex;align-items:center;justify-content:center;">
-    <form style="width:350px;background:var(--card-bg);padding:40px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.1);">
-        <h2 style="text-align:center;margin-bottom:20px;">Login</h2>
-        <input type="email" placeholder="Email" required style="width:100%;padding:12px;margin:10px 0;border-radius:10px;border:1px solid #ccc;">
-        <input type="password" placeholder="Password" required style="width:100%;padding:12px;margin:10px 0;border-radius:10px;border:1px solid #ccc;">
-        <button class="btn-primary" style="width:100%;">Login</button>
-        <p style="margin-top:15px;text-align:center;">
-            Don’t have an account? <a href="signup.html">Sign Up</a>
-        </p>
+<div class="auth-card">
+    <h2>Welcome Back</h2>
+    <p>Login to your A.D.I.S account</p>
+
+    <form>
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <button class="btn-primary" type="submit">Login</button>
     </form>
-</section>
+
+    <span>
+        Don't have an account?
+        <a href="signup.html" style="color:white;font-weight:600;">Sign Up</a>
+    </span>
+</div>
 
 </body>
 </html>
-
