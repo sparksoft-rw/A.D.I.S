@@ -1,81 +1,102 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services | A.D.I.S Ltd</title>
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<script defer src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <title>Our Services | A.D.I.S Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
 </head>
-
 <body>
 
 <header class="navbar">
-    <div class="logo">
-        <img src="images/A.D.I.S Logo.svg" alt="A.D.I.S Logo">
-    </div>
-
+  <div class="container nav-container">
+    <div class="logo">A.D.I.S</div>
     <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="#">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
-
-    <div class="nav-actions">
-        <button id="themeToggle">🌙</button>
-        <a href="login.html" class="btn-outline">Login</a>
-    </div>
+  </div>
 </header>
 
-<section class="hero" style="height:60vh;">
-    <div class="hero-content">
-        <h1>Our Services</h1>
-        <p>Comprehensive digital solutions for modern businesses.</p>
-    </div>
+<section class="page-hero">
+  <div class="hero-bg-animation"></div>
+  <div class="container">
+    <h1>Our Digital Services</h1>
+    <p>Comprehensive solutions designed to accelerate your business growth.</p>
+  </div>
 </section>
 
-<section class="services-preview">
-    <div class="service-grid">
+<section class="section">
+  <div class="container grid-3">
 
-        <div class="card reveal">
-            <h3>Web Development</h3>
-            <p>Custom websites built with modern technologies.</p>
-        </div>
-
-        <div class="card reveal">
-            <h3>Mobile Applications</h3>
-            <p>High-performance Android & iOS apps.</p>
-        </div>
-
-        <div class="card reveal">
-            <h3>Software Systems</h3>
-            <p>Enterprise-grade management systems.</p>
-        </div>
-
-        <div class="card reveal">
-            <h3>UI/UX Design</h3>
-            <p>User-centered designs that convert visitors into customers.</p>
-        </div>
-
-        <div class="card reveal">
-            <h3>Digital Marketing</h3>
-            <p>SEO, branding and strategic growth campaigns.</p>
-        </div>
-
-        <div class="card reveal">
-            <h3>IT Consulting</h3>
-            <p>Technology strategies that align with business goals.</p>
-        </div>
-
+    <div class="service-card">
+      <h3>Web Development</h3>
+      <p>
+        Custom-designed websites and web applications built with modern 
+        technologies for performance, scalability, and security.
+      </p>
     </div>
+
+    <div class="service-card">
+      <h3>Mobile App Development</h3>
+      <p>
+        Native and cross-platform mobile applications that deliver seamless 
+        user experiences across devices.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>UI/UX Design</h3>
+      <p>
+        Human-centered design strategies focused on engagement, usability, 
+        and conversion optimization.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>IT Consulting</h3>
+      <p>
+        Strategic advisory services to help businesses choose the right 
+        technologies and digital transformation roadmap.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>System Integration</h3>
+      <p>
+        Seamless integration of digital tools, APIs, and platforms to 
+        enhance operational efficiency.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <h3>Digital Strategy</h3>
+      <p>
+        Data-driven strategies that align technology initiatives with 
+        measurable business outcomes.
+      </p>
+    </div>
+
+  </div>
 </section>
 
-<footer>
-    <p>© 2026 A.D.I.S Ltd. All rights reserved.</p>
+<section class="cta-section">
+  <div class="container">
+    <h2>Let’s Transform Your Ideas Into Reality</h2>
+    <p>We build scalable, secure, and innovative solutions tailored to your needs.</p>
+    <a href="contact.html" class="btn-primary">Request a Consultation</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 A.D.I.S Ltd. All Rights Reserved.</p>
+  </div>
 </footer>
 
 </body>
