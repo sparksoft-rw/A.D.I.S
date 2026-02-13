@@ -1,54 +1,73 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | A.D.I.S Ltd</title>
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<script defer src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <title>Contact Us | A.D.I.S Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
 </head>
-
 <body>
 
 <header class="navbar">
-    <div class="logo">
-        <img src="images/A.D.I.S Logo.svg" alt="A.D.I.S Logo">
-    </div>
-
+  <div class="container nav-container">
+    <div class="logo">A.D.I.S</div>
     <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a class="active" href="#">Contact</a></li>
+      </ul>
     </nav>
-
-    <div class="nav-actions">
-        <button id="themeToggle">🌙</button>
-        <a href="login.html" class="btn-outline">Login</a>
-    </div>
+  </div>
 </header>
 
-<section class="hero" style="height:60vh;">
-    <div class="hero-content">
-        <h1>Contact Us</h1>
-        <p>We would love to hear from you.</p>
+<section class="page-hero">
+  <div class="hero-bg-animation"></div>
+  <div class="container">
+    <h1>Let’s Talk</h1>
+    <p>We’re ready to discuss your next digital project.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+
+    <div>
+      <h2>Contact Information</h2>
+      <p>Email: info@adis.rw</p>
+      <p>Phone: +250 7XX XXX XXX</p>
+      <p>Location: Kigali, Rwanda</p>
+      <p>
+        Reach out to us for partnerships, inquiries, or technical consultations. 
+        Our team responds promptly to all requests.
+      </p>
     </div>
-</section>
 
-<section class="services-preview">
-    <form style="max-width:600px;margin:auto;">
-        <input type="text" placeholder="Full Name" required style="width:100%;padding:15px;margin:10px 0;border-radius:10px;border:1px solid #ccc;">
-        <input type="email" placeholder="Email Address" required style="width:100%;padding:15px;margin:10px 0;border-radius:10px;border:1px solid #ccc;">
-        <textarea placeholder="Your Message" rows="5" required style="width:100%;padding:15px;margin:10px 0;border-radius:10px;border:1px solid #ccc;"></textarea>
-        <button class="btn-primary" type="submit">Send Message</button>
+    <form class="contact-form">
+      <h2>Send a Message</h2>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Subject">
+      <textarea placeholder="Your Message" rows="5"></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
     </form>
+
+  </div>
 </section>
 
-<footer>
-    <p>© 2026 A.D.I.S Ltd. All rights reserved.</p>
+<section class="cta-section">
+  <div class="container">
+    <h2>Start Your Digital Journey Today</h2>
+    <p>Partner with A.D.I.S Ltd and experience innovation without limits.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 A.D.I.S Ltd. All Rights Reserved.</p>
+  </div>
 </footer>
 
 </body>
