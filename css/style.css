@@ -176,4 +176,83 @@ footer {
   .menu-toggle {
     display: block;
   }
+  /* AUTH SECTION */
+
+.auth-section {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 8%;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 450px;
+}
+
+.auth-card h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.auth-subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  opacity: 0.7;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.input-group input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: var(--azure);
+  box-shadow: 0 0 0 3px rgba(0,120,212,0.2);
+}
+
+.auth-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.full-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.auth-link a {
+  color: var(--azure);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
 }
