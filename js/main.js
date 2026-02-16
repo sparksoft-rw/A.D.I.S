@@ -1,58 +1,42 @@
-// Fade animation
-const faders = document.querySelectorAll('.fade-in');
+// Dark Mode
+const themeToggle = document.getElementById("themeToggle");
+themeToggle.onclick = () => {
+  document.body.classList.toggle("dark");
+};
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('show');
-    }
-  });
-}, {threshold:0.2});
-
-faders.forEach(f => observer.observe(f));
-
-// Dark mode
-const toggle = document.getElementById("themeToggle");
-if(toggle){
-  toggle.addEventListener("click", ()=>{
-    document.body.classList.toggle("dark-mode");
-  });
-}
-
-// Mobile menu
+// Mobile Menu
 const menuToggle = document.getElementById("menuToggle");
-const nav = document.getElementById("navMenu");
+const navMenu = document.getElementById("navMenu");
 
-if(menuToggle){
-  menuToggle.addEventListener("click", ()=>{
-    nav.classList.toggle("active");
-  });
-}
+menuToggle.onclick = () => {
+  navMenu.classList.toggle("active");
+};
 
-// Counters
-const counters = document.querySelectorAll('.count');
-
-const counterObserver = new IntersectionObserver(entries=>{
-  entries.forEach(entry=>{
-    if(entry.isIntersecting){
-      const el = entry.target;
-      const target = +el.getAttribute("data-target");
-      let count = 0;
-
-      const update = ()=>{
-        const inc = target/100;
-        count += inc;
-        if(count < target){
-          el.innerText = Math.ceil(count);
-          requestAnimationFrame(update);
-        } else {
-          el.innerText = target;
-        }
-      };
-      update();
-      counterObserver.unobserve(el);
+// Fade-in scroll
+const faders = document.querySelectorAll(".fade-in");
+window.addEventListener("scroll", () => {
+  faders.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 50){
+      el.classList.add("visible");
     }
   });
-},{threshold:0.5});
+});
 
-counters.forEach(c=>counterObserver.observe(c));
+// Counter Animation
+const counters = document.querySelectorAll(".count");
+counters.forEach(counter => {
+  const update = () => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText;
+    const inc = target / 200;
+    if(count < target){
+      counter.innerText = Math.ceil(count + inc);
+      setTimeout(update, 10);
+    } else {
+      counter.innerText = target;
+    }
+  };
+  update();
+});
+
