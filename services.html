@@ -1,85 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
+<title>Services - A.D.I.S Ltd</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services | A.D.I.S Ltd</title>
 <link rel="stylesheet" href="css/style.css">
-<script defer src="js/main.js"></script>
 </head>
 <body>
 
-<header class="navbar">
-    <div class="container nav-container">
-        <img src="images/A.D.I.S Logo.svg" class="logo">
-        <nav id="navMenu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html" class="active">Services</a>
-            <a href="contact.html">Contact</a>
-            <a href="login.html" class="btn-nav">Login</a>
-        </nav>
-        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
-    </div>
+<header>
+  <div class="logo">
+    <img src="images/A.D.I.S Logo.svg" alt="A.D.I.S Logo">
+  </div>
+
+  <div class="menu-toggle" id="menuToggle">☰</div>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="nav-btn">Login</a>
+  </nav>
+
+  <button id="themeToggle">🌙</button>
 </header>
 
-<section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content fade-in">
-        <h1>Enterprise-Level Digital Services</h1>
-        <p>
-            From modern web platforms to enterprise systems and secure IT infrastructure,
-            A.D.I.S Ltd delivers high-performance digital solutions.
-        </p>
-    </div>
-    <div class="curve-divider"></div>
+<section class="page-hero">
+  <h1 class="fade-in">Our Services</h1>
 </section>
 
-<section class="section">
-    <div class="container services-grid fade-in">
+<section class="section services-grid fade-in">
+  <div class="glass card">
+    <h3>Cloud Solutions</h3>
+    <p>Secure and scalable cloud architecture built for performance and resilience.</p>
+  </div>
 
-        <div class="glass-card">
-            <h3>Web Development</h3>
-            <p>Modern responsive websites and scalable web apps.</p>
-        </div>
+  <div class="glass card">
+    <h3>Web Development</h3>
+    <p>Modern responsive platforms built with enterprise-grade standards.</p>
+  </div>
 
-        <div class="glass-card">
-            <h3>Enterprise Systems</h3>
-            <p>Custom business automation and workflow solutions.</p>
-        </div>
-
-        <div class="glass-card">
-            <h3>IT Infrastructure</h3>
-            <p>Secure networking, hosting, and cloud systems.</p>
-        </div>
-
-        <div class="glass-card">
-            <h3>Digital Strategy</h3>
-            <p>Technology planning aligned with business growth.</p>
-        </div>
-
-    </div>
+  <div class="glass card">
+    <h3>Digital Strategy</h3>
+    <p>Technology planning aligned with long-term business transformation goals.</p>
+  </div>
 </section>
 
-<footer class="premium-footer">
-    <div class="container footer-grid">
-        <div>
-            <img src="images/A.D.I.S Logo.svg" class="footer-logo">
-            <p>Advanced Digital & IT Solutions built for tomorrow.</p>
-        </div>
-        <div>
-            <h4>Quick Links</h4>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <div>
-            <h4>Contact</h4>
-            <p>Email: info@adis.rw</p>
-            <p>Phone: +250 XXX XXX XXX</p>
-        </div>
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>A.D.I.S Ltd</h3>
+      <p>Innovative digital solutions built for sustainable growth.</p>
     </div>
+    <div>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>Email: info@adis.com</p>
+      <p>Kigali, Rwanda</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 A.D.I.S Ltd
+  </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
+
