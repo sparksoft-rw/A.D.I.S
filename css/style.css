@@ -76,20 +76,29 @@ nav a.active {
   padding-bottom: 4px;
 }
 
-/* PAGE HERO */
-
 .page-hero {
   text-align: center;
-  padding: 120px 8% 80px;
+  padding: 140px 8% 100px;
+  position: relative;
 }
 
 .page-hero h1 {
-  font-size: 48px;
-  margin-bottom: 15px;
+  font-size: 56px;
+  margin-bottom: 20px;
 }
 
 .page-hero p {
+  max-width: 700px;
+  margin: auto;
   opacity: 0.8;
+  font-size: 18px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* PREMIUM SECTIONS */
