@@ -1,77 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
+<title>Contact - A.D.I.S Ltd</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | A.D.I.S Ltd</title>
 <link rel="stylesheet" href="css/style.css">
-<script defer src="js/main.js"></script>
 </head>
 <body>
 
-<header class="navbar">
-    <div class="container nav-container">
-        <img src="images/A.D.I.S Logo.svg" class="logo">
-        <nav id="navMenu">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html" class="active">Contact</a>
-            <a href="login.html" class="btn-nav">Login</a>
-        </nav>
-        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
-    </div>
+<header>
+  <div class="logo">
+    <img src="images/A.D.I.S Logo.svg" alt="A.D.I.S Logo">
+  </div>
+
+  <div class="menu-toggle" id="menuToggle">☰</div>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="nav-btn">Login</a>
+  </nav>
+
+  <button id="themeToggle">🌙</button>
 </header>
 
-<section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content fade-in">
-        <h1>Let’s Build Something Great</h1>
-        <p>
-            Reach out to A.D.I.S Ltd and let’s discuss how we can support your digital transformation journey.
-        </p>
-    </div>
-    <div class="curve-divider"></div>
+<section class="page-hero">
+  <h1 class="fade-in">Contact Us</h1>
 </section>
 
-<section class="section">
-    <div class="container grid-2 fade-in">
-
-        <div>
-            <h2>Contact Information</h2>
-            <p>Email: info@adis.rw</p>
-            <p>Phone: +250 XXX XXX XXX</p>
-        </div>
-
-        <form class="glass-card contact-form">
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button class="btn-primary">Send Message</button>
-        </form>
-
-    </div>
+<section class="section fade-in">
+  <div class="glass card">
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </div>
 </section>
 
-<footer class="premium-footer">
-    <div class="container footer-grid">
-        <div>
-            <img src="images/A.D.I.S Logo.svg" class="footer-logo">
-            <p>Advanced Digital & IT Solutions built for tomorrow.</p>
-        </div>
-        <div>
-            <h4>Quick Links</h4>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <div>
-            <h4>Contact</h4>
-            <p>Email: info@adis.rw</p>
-            <p>Phone: +250 XXX XXX XXX</p>
-        </div>
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>A.D.I.S Ltd</h3>
+      <p>Innovative digital solutions built for sustainable growth.</p>
     </div>
+    <div>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>Email: info@adis.com</p>
+      <p>Kigali, Rwanda</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 A.D.I.S Ltd
+  </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
