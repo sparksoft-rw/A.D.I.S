@@ -1,86 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
+<title>About - A.D.I.S Ltd</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | A.D.I.S Ltd</title>
 <link rel="stylesheet" href="css/style.css">
-<script defer src="js/main.js"></script>
 </head>
 <body>
 
-<header class="navbar">
-    <div class="container nav-container">
-        <img src="images/A.D.I.S Logo.svg" class="logo">
-        <nav id="navMenu">
-            <a href="index.html">Home</a>
-            <a href="about.html" class="active">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-            <a href="login.html" class="btn-nav">Login</a>
-        </nav>
-        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
-    </div>
+<header>
+  <div class="logo">
+    <img src="images/A.D.I.S Logo.svg" alt="A.D.I.S Logo">
+  </div>
+
+  <div class="menu-toggle" id="menuToggle">☰</div>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="nav-btn">Login</a>
+  </nav>
+
+  <button id="themeToggle">🌙</button>
 </header>
 
-<!-- HERO SAME STRUCTURE AS INDEX -->
-<section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content fade-in">
-        <h1>Driving Digital Innovation With Precision</h1>
-        <p>
-            A.D.I.S Ltd delivers enterprise-grade digital systems,
-            automation solutions, and scalable infrastructure
-            designed to help businesses grow smarter and operate efficiently.
-        </p>
-    </div>
-    <div class="curve-divider"></div>
+<section class="page-hero">
+  <h1 class="fade-in">About A.D.I.S</h1>
 </section>
 
-<section class="section">
-    <div class="container grid-2 fade-in">
-        <div>
-            <h2>Who We Are</h2>
-            <p>
-                We are a technology-driven company focused on modernizing
-                business operations through secure digital platforms.
-                Our team combines technical expertise with strategic insight
-                to deliver impactful solutions.
-            </p>
-        </div>
-
-        <div class="glass-card">
-            <h3>Our Values</h3>
-            <ul>
-                <li>✔ Innovation</li>
-                <li>✔ Reliability</li>
-                <li>✔ Security</li>
-                <li>✔ Long-Term Partnerships</li>
-            </ul>
-        </div>
-    </div>
+<section class="section fade-in">
+  <div class="glass card">
+    <h2>Who We Are</h2>
+    <p>
+      A.D.I.S Ltd is a forward-thinking digital solutions company focused on delivering enterprise-grade systems, cloud solutions, and innovation strategies powered by modern technologies.
+    </p>
+  </div>
 </section>
 
-<footer class="premium-footer">
-    <div class="container footer-grid">
-        <div>
-            <img src="images/A.D.I.S Logo.svg" class="footer-logo">
-            <p>Advanced Digital & IT Solutions built for tomorrow.</p>
-        </div>
-        <div>
-            <h4>Quick Links</h4>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <div>
-            <h4>Contact</h4>
-            <p>Email: info@adis.rw</p>
-            <p>Phone: +250 XXX XXX XXX</p>
-        </div>
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h3>A.D.I.S Ltd</h3>
+      <p>Innovative digital solutions built for sustainable growth and enterprise transformation.</p>
     </div>
+    <div>
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <p>Email: info@adis.com</p>
+      <p>Kigali, Rwanda</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 A.D.I.S Ltd
+  </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
 
