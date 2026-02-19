@@ -75,7 +75,7 @@ body {
 }
 
 .logo img {
-  height: 70px;   /* Increased from 48px */
+  height: 80px;   /* Increased from 48px */
   width: auto;
   object-fit: contain;
   transition: 0.3s ease;
@@ -294,7 +294,7 @@ nav a.active {
   }
 
   .logo img {
-    height: 50px;
+    height: 70px;
   }
 
   .page-hero h1 {
