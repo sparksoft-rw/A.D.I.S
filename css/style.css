@@ -67,6 +67,24 @@ body {
   align-items: center;
   padding: 20px 8%;
 }
+/* ================= LOGO ================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 48px;        /* Main control size */
+  width: auto;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+
+/* Optional subtle premium hover */
+.logo img:hover {
+  transform: scale(1.05);
+}
 
 nav a {
   color: white;
@@ -273,6 +291,10 @@ nav a.active {
   .nav-container {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .logo img {
+    height: 38px;
   }
 
   .page-hero h1 {
