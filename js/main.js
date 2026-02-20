@@ -24,19 +24,25 @@ window.addEventListener("scroll", () => {
 });
 
 // Counter Animation
-const counters = document.querySelectorAll(".count");
-counters.forEach(counter => {
-  const update = () => {
-    const target = +counter.getAttribute("data-target");
-    const count = +counter.innerText;
-    const inc = target / 200;
-    if(count < target){
-      counter.innerText = Math.ceil(count + inc);
-      setTimeout(update, 10);
-    } else {
-      counter.innerText = target;
-    }
-  };
-  update();
-});
+ const counters = document.querySelectorAll(".count");
 
+  counters.forEach(counter => {
+    const target = +counter.getAttribute("data-target");
+    let count = 0;
+
+    const speed = target / 100;
+
+    function updateCount() {
+      if (count < target) {
+        count += speed;
+        counter.innerText = Math.ceil(count);
+        setTimeout(updateCount, 20);
+      } else {
+        counter.innerText = target;
+      }
+    }
+
+    updateCount();
+  });
+
+});
